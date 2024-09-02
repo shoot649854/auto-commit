@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run dev:local --port 3000",
+    "dev:local": "next dev",
+    "dev:mock": "pnpm dlx tsx ./src/mocks/server.ts",
+    "build": "next build",
+    "start": "pnpm run dev:mock | next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "lint:css": "stylelint \"src/**/*.scss\"",
+    "format": "prettier --write .",
+    "check:format": "prettier --check .",
+    "check:knip": "knip --reporter markdown",
+    "check:type": "tsc --noEmit",
+    "check:all": "pnpm run lint && pnpm run check:format && pnpm run check:type && pnpm run check:knip",
+    "test": "vitest --run",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --config ./.prettierrc --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "knip": "^5.29.1",
+    "next": "14.2.7",
+    "prettier": "^3.3.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "stylelint": "^16.9.0",
+    "vitest": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

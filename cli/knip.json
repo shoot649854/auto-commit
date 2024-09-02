@@ -1,0 +1,14 @@
+{
+  "entry": ["src/**/*.ts", "src/**/*.tsx", "public/**"],
+  "project": "tsconfig.json",
+  "ignore": [
+    "node_modules",
+    "postcss.config.js",
+    "postcss.config.mjs",
+    "eslint.config.mjs",
+    ".eslintrc.json",
+    "public/**"
+  ],
+  "ignoreBinaries": ["only-allow"],
+  "ignoreDependencies": ["lint-staged"]
+}
