@@ -8,19 +8,29 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --config ./.prettierrc --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
+    "next": "14.2.7",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.7"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "lint-staged": "^15.2.10",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.7"
+    "typescript": "^5"
   }
 }
