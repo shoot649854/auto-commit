@@ -1,4 +1,4 @@
-'Problem: Bug':
-  - head-branch: ['^hotfix']
-'Type: New Feature':
-  - head-branch: ['^dev']
+"Problem: Bug":
+  - head-branch: ["^hotfix"]
+"Type: New Feature":
+  - head-branch: ["^dev"]

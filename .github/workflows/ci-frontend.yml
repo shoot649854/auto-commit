@@ -82,7 +82,7 @@ jobs:
       - name: Check Lint
         run: pnpm run lint
         working-directory: ./frontend
-      
+
       - name: Check Format
         run: pnpm run check:format
         working-directory: ./frontend
@@ -114,7 +114,7 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-      
+
       - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
@@ -122,7 +122,7 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-      
+
       - name: Install dependencies
         run: pnpm install
         working-directory: ./frontend
@@ -130,7 +130,6 @@ jobs:
       - name: Run Build
         run: pnpm run test
         working-directory: ./frontend
-
 
   build-check:
     runs-on: ubuntu-latest

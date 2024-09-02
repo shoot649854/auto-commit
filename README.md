@@ -29,17 +29,17 @@ Description
 
 ### Basic Branch Operation Rules
 
--   Work is branched from each latest branch
--   Delete working branches after merging
--   Review as much as possible (have someone do it for you)
--   Build, deploy, etc. are discussed separately.
+- Work is branched from each latest branch
+- Delete working branches after merging
+- Review as much as possible (have someone do it for you)
+- Build, deploy, etc. are discussed separately.
 
 ## Prerequisites
 
--   Python 3.11
--   Docker
--   Docker Compose
--   Homebrew (for installing Graphviz)
+- Python 3.11
+- Docker
+- Docker Compose
+- Homebrew (for installing Graphviz)
 
 ## Dependencies
 
@@ -54,10 +54,10 @@ Description
 
 1. **Clone the Repository**
 
-    ```bash
-    git clone https://github.com/
-    cd
-    ```
+   ```bash
+   git clone https://github.com/
+   cd
+   ```
 
 ## Deployment
 

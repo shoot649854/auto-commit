@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   # pull_request:
   push:
-      branches: ['main']
+    branches: ["main"]
   # pull_request:
   # workflow_run:
   #   workflows: ["Frontend CI"]
@@ -90,11 +90,11 @@ jobs:
       - name: Sync files to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}  
-          username: ${{ secrets.FTP_USERNAME }}  
-          password: ${{ secrets.FTP_PASSWORD }}  
-          local-dir: './frontend/out/'
-          server-dir: '/home/shirokanecpa/www/'
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: "./frontend/out/"
+          server-dir: "/home/shirokanecpa/www/"
           exclude: |
             **/.git*
             **/.git*/**

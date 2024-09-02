@@ -11,9 +11,9 @@
 
 ## Checklist
 
--   [ ] Assign to appropriate project
--   [ ] Assign to appropriate milestone
--   [ ] Add appropriate labels
+- [ ] Assign to appropriate project
+- [ ] Assign to appropriate milestone
+- [ ] Add appropriate labels
 
 ## Steps to Reproduce
 
@@ -23,17 +23,17 @@
 
 ## Environment
 
--   <!-- Environment Value -->
--   <!-- Environment Value -->
--   <!-- Environment Value -->
--   <!-- Environment Value -->
+- <!-- Environment Value -->
+- <!-- Environment Value -->
+- <!-- Environment Value -->
+- <!-- Environment Value -->
 
 ## Type of issue
 
--   [ ] 🐛: Bug
--   [ ] ✨: Feature request
--   [ ] ❓: Question
--   [ ] 💡: Improvement suggestion
+- [ ] 🐛: Bug
+- [ ] ✨: Feature request
+- [ ] ❓: Question
+- [ ] 💡: Improvement suggestion
 
 ## Possible Solution
 

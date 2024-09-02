@@ -1,7 +1,7 @@
 # Title
 
--   [ ] Assign Reviewers, Assignees, and Labels
--   [ ] Set [PR draft](https://github.blog/2019-02-14-introducing-draft-pull-requests/)if it's not ready
+- [ ] Assign Reviewers, Assignees, and Labels
+- [ ] Set [PR draft](https://github.blog/2019-02-14-introducing-draft-pull-requests/)if it's not ready
 
 ## Description
 
@@ -14,12 +14,12 @@
 
 ## Type of change
 
--   [ ] 🐛: Bugfix
--   [ ] ✨: Feature
--   [ ] 💻: Code style update (formatting, local variables)
--   [ ] ♻️: Refactoring (no functional changes, no api changes)
--   [ ] 📝: Documentation content changes
--   [ ] 🛠️: Other... Please describe:
+- [ ] 🐛: Bugfix
+- [ ] ✨: Feature
+- [ ] 💻: Code style update (formatting, local variables)
+- [ ] ♻️: Refactoring (no functional changes, no api changes)
+- [ ] 📝: Documentation content changes
+- [ ] 🛠️: Other... Please describe:
 
 ### Screenshots
 
