@@ -7,7 +7,7 @@
     "dev:local": "next dev",
     "dev:mock": "pnpm dlx tsx ./src/mocks/server.ts",
     "build": "next build",
-    "start": "pnpm run dev:mock | next start",
+    "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "lint:css": "stylelint \"src/**/*.scss\"",
